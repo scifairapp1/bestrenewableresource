@@ -2,4 +2,4 @@ gunicorn
 kivy
 pandas
 scikit-learn
-
+opencv-python
