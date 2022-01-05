@@ -1,1 +1,1 @@
-web: gunicorn main:press
+web: gunicorn main.py
