@@ -1,1 +1,1 @@
-web: gunicorn <filename>:<main method name>
+web: gunicorn main:press
