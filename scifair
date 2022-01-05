@@ -1,0 +1,50 @@
+class MyGridLayout(GridLayout):
+    # Initialize infinite keywords
+    def __init__(self, **kwargs):
+        # Call grid layout constructor
+        super(MyGridLayout, self).__init__(**kwargs)
+
+        # set columns
+        self.cols = 2
+
+        # add widgets
+        self.add_widget(Label(text="Low Temp (f):"))
+        # add input box
+        self.lowtemp = TextInput(multiline=False)
+        self.add_widget(self.name)
+
+        # add widgets
+        self.add_widget(Label(text="High Temp (f):"))
+        # add input box
+        self.hightemp = TextInput(multiline=False)
+        self.add_widget(self.name)
+
+        # add widgets
+        self.add_widget(Label(text="Precipitation (in):"))
+        # add input box
+        self.precipitation = TextInput(multiline=False)
+        self.add_widget(self.name)
+
+        # add widgets
+        self.add_widget(Label(text="Humidity (d):"))
+        # add input box
+        self.humidity = TextInput(multiline=False)
+        self.add_widget(self.name)
+
+        # add widgets
+        self.add_widget(Label(text="Cloudy (percentage):"))
+        # add input box
+        self.cloudy = TextInput(multiline=False)
+        self.add_widget(self.name)
+
+        # add widgets
+        self.add_widget(Label(text="Snowy (in):"))
+        # add input box
+        self.snowy = TextInput(multiline=False)
+        self.add_widget(self.name)
+
+        # add widgets
+        self.add_widget(Label(text="Wind Speed (mph):"))
+        # add input box
+        self.windspeed = TextInput(multiline=False)
+        self.add_widget(self.name)
