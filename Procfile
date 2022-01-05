@@ -1,1 +1,1 @@
-web: gunicorn <main.py>:<press> 
+web: gunicorn wsgi:app
