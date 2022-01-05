@@ -7,7 +7,7 @@ from kivy.uix.button import Button
 import pandas as pd
 from sklearn import linear_model
 
-df = pd.read_csv('/scifair.csv')
+df = pd.read_csv('scifair.csv')
 X = df.drop('renewable_source', axis=1).astype(float)
 Y = df['renewable_source'].astype(float)
 regr = linear_model.LinearRegression()
