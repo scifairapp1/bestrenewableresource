@@ -1,5 +1,4 @@
-gunicorn
 kivy
+gunicorn
 pandas
 scikit-learn
-opencv-python
