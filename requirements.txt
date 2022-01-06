@@ -2,3 +2,5 @@ kivy
 gunicorn
 pandas
 scikit-learn
+django
+django-heroku
