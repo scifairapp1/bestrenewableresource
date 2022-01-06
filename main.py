@@ -5,6 +5,8 @@ from kivy.uix.gridlayout import GridLayout
 from kivy.uix.textinput import TextInput
 from kivy.uix.button import Button
 import pandas as pd
+import os
+os.environ['DISPLAY'] = ':0'
 from sklearn import linear_model
 
 '''df = pd.read_csv('scifair.csv')
