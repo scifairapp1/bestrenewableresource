@@ -126,6 +126,7 @@ class MyGridLayout(GridLayout):
         self.lowtemp.text = ""
         self.hightemp.text = ""
         self.precipitation.text = ""
+        MyGridLayout()
 
 
 class MyApp(App):
