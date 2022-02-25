@@ -43,6 +43,7 @@ Y = df['best_renewable_resource'].astype(float)
 
 regr = linear_model.LinearRegression()
 regr.fit(X, Y)
+MyGridLayout()
 
 
 class MyGridLayout(GridLayout):
