@@ -19,9 +19,7 @@ app = flask.Flask(__name__)
 def home():
     return "Hello World"
 
-'''df = pd.read_csv('scifair.csv')
-X = df.drop('renewable_source', axis=1).astype(float)
-Y = df['renewable_source'].astype(float)'''
+
 Best_Renewable_Resource = {
     'low_temp_(f)': [35, 28, 39, 44, 50, 45, 56, 38, 37, 50, 40, 66, 63, 44, 60, 35, 36, 42, 39, 35, 43, 60, 36, 42, 48,
                      44, 52, 44, 32],
@@ -46,13 +44,13 @@ df = pd.DataFrame(Best_Renewable_Resource,
                   columns=['low_temp_(f)', 'high_temp_(f)', 'precipitation_(in)', 'wind_speed_(mph)', 'humidity_(d)',
                            'cloudy_(percentage)', 'snowy_(in)', 'best_renewable_resource'])
 
-X = df[['high_temp_(f)', 'low_temp_(f)', 'precipitation_(in)',  'wind_speed_(mph)', 'humidity_(d)','cloudy_(percentage)'
+X1 = df[['high_temp_(f)', 'low_temp_(f)', 'precipitation_(in)',  'wind_speed_(mph)', 'humidity_(d)','cloudy_(percentage)'
     , 'snowy_(in)']].astype(
     float)
-Y = df['best_renewable_resource'].astype(float)
+Y1 = df['best_renewable_resource'].astype(float)
 
 regr = linear_model.LinearRegression()
-regr.fit(X, Y)
+regr.fit(X1, Y1)
 
 
 
