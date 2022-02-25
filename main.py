@@ -11,6 +11,14 @@ import os
 os.environ['DISPLAY'] = ':0'
 from sklearn import linear_model
 
+app = flask.Flask(__name__)
+
+@app.route('/')
+
+@app.route('/home')
+def home():
+    return "Hello World"
+
 '''df = pd.read_csv('scifair.csv')
 X = df.drop('renewable_source', axis=1).astype(float)
 Y = df['renewable_source'].astype(float)'''
@@ -45,9 +53,8 @@ Y = df['best_renewable_resource'].astype(float)
 
 regr = linear_model.LinearRegression()
 regr.fit(X, Y)
-app = flask.Flask(__name__)
 
-@app.route('/')
+
 
 
 class MyGridLayout(GridLayout):
