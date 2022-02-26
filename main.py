@@ -137,4 +137,6 @@ class MyApp(App):
 
 
 if __name__ == '__main__':
-    MyApp().run()
+    from os import environ
+    port = int(environ.get('PORT', 5000))
+    MyApp().run(debug=False, port=port, host='0.0.0.0')
